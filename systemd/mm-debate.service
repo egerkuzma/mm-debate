@@ -1,0 +1,17 @@
+[Unit]
+Description=mm-debate — два агента Claude Code спорят в Mattermost
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ВАШ_ПОЛЬЗОВАТЕЛЬ
+WorkingDirectory=/home/ВАШ_ПОЛЬЗОВАТЕЛЬ/mm-debate
+ExecStart=/usr/bin/env node /home/ВАШ_ПОЛЬЗОВАТЕЛЬ/mm-debate/debate.js
+Restart=always
+RestartSec=10
+Environment=HOME=/home/ВАШ_ПОЛЬЗОВАТЕЛЬ
+Environment=PATH=/home/ВАШ_ПОЛЬЗОВАТЕЛЬ/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target

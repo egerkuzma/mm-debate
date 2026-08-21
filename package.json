@@ -1,0 +1,10 @@
+{
+  "name": "mm-debate",
+  "version": "0.1.0",
+  "description": "Two Claude Code agents with opposing personalities argue in a Mattermost thread",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "debate.js",
+  "scripts": { "start": "node debate.js" },
+  "dependencies": { "dotenv": "^17.0.0", "ws": "^8.18.0" }
+}

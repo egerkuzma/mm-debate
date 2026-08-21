@@ -1,0 +1,6 @@
+.env
+node_modules/
+debate-sessions.json
+thread-*.md
+exports/
+.DS_Store
