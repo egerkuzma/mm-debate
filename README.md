@@ -30,7 +30,7 @@ Claude Code. Очерёдность держит диспетчер: сами б
 2. Ставим:
 
 ```bash
-git clone https://github.com/ВАШ_АККАУНТ/mm-debate
+git clone https://github.com/egerkuzma/mm-debate
 cd mm-debate
 npm install
 cp .env.example .env
